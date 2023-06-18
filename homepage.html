@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pondok pesantren</title>
+
+    <!-- Link to google fonts - Poppins  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+    <!-- Meta tags untuk SEO -->
+    <meta name="description" content="Deskripsi singkat mengenai halaman web Anda">
+    <meta name="keywords" content="kata kunci, yang, relevan, dengan, halaman, web, Anda">
+    <meta name="author" content="Nama Anda">
+    <meta name="robots" content="index, follow"> <!-- Mengizinkan robot mesin pencari untuk mengindeks halaman dan mengikuti tautan -->
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+    <!-- Meta tags untuk responsif -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Link css -->
+    
+    <!-- Link cdn to tailwindcss + postcss -->
+    <link rel="stylesheet" href="./styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="overflow-x-hidden">
+    <nav class="flex items-center justify-between px-8 lg:px-[140px] py-4 bg-gradient-to-r from-[#00b09b] shadow-lg z-20 to-[#96c93d] w-screen h-max">
+        <div class="flex items-center text-white">
+            <img src="./assets/images/logoPondok.png" alt="logo" class="w-[50px]">
+            <h2 class="hidden lg:inline text-white font-bold text-[22px] ml-4">Pondok al-qomariyah</h2>
+        </div>
+        <div class="flex items-center">
+            <a href="/register.html">
+                <div class="w-max h-max px-6 py-3 rounded-full text-center cursor-pointer hover:brightness-[90%] bg-white text-green-500 mr-4 active:scale-[0.97]">Daftar</div>
+            </a>
+            <a href="./login.html">
+                <div class="w-max h-max px-6 py-3 rounded-full text-center cursor-pointer hover:brightness-[90%] bg-[#f5ae10] text-white active:scale-[0.97]">Login</div>
+            </a>
+        </div>
+    </nav>
+
+    <section class="bg-gradient-to-r from-[#00b09b] shadow-lg to-[#96c93d] rounded-br-[140px] flex items-center justify-center w-[100vw] h-max lg:h-[80vh] px-2 lg:px-6">
+        <div class="lg:flex items-center text-center lg:text-left justify-center pb-[50px] lg:pb-0">
+            <div class="w-[100%] lg:w-[40%] flex lg:inline my-12 lg:my-0 items-center justify-center">
+                <img src="./assets/images/logoPondok.png" alt="logo" class="w-[55%] lg:w-[80%] lg:w-[350px] mr-6">
+            </div>
+            <div class="w-[100%] lg:w-[60%] mt-[20px] lg:mt-[-40px] pl-[0px] lg:pl-[35px] flex flex-col justify-center">
+                <h2 class="lg:ml-4 ml-auto mr-auto lg:mr-0 text-[30px] w-max lg:text-[44px] font-bold text-white leading-[1.5em]">
+                    Pendaftaran Santri Baru
+                </h2>
+                <h3 class="my-1 text-[30px] lg:text-[35px] w-max font-bold text-white lg:ml-4 ml-auto mr-auto lg:mr-0">Pondok Pesantren Nurul Jadid</h3>
+                <p class="mt-4 text-[16px] font-normal text-white lg:ml-5">Nurul Jadid Boarding School for Education and Science</p>
+                <p class="mt-4 text-[18px] font-bold text-white lg:ml-5">Tahun Ajaran 2023 - 2024</p>
+                <div class="w-max h-max rounded-full scale-[1.3] lg:scale-[1] px-4 py-2 bg-white text-green-500 ml-5 lg:ml-4 ml-auto mr-auto lg:mr-0 mt-12 cursor-pointer hover:brightness-[90%] active:scale-[1.2] lg:active:scale-[0.97]">
+                    <p>Daftar sekarang</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="w-screen flex flex-col items-center justify-center pt-[80px] lg:pt-[100px] pb-[120px] px-[30px]">
+        <h2 class="text-[40px] text-center font-bold mb-[40px]"><span class="text-[#00b09b]">Alur</span> Pendaftaran Online</h2>
+        <div class="w-screen px-12 mt-8 lg:flex item-center justify-center">
+            <div class="w-[90% mb-[40px] lg:mb-0] lg:w-[18%] relative lg:before:absolute lg:before:w-[80%] before:h-[4px] before:bg-[#00b09b] before:top-[40px] before:right-[-100px] mx-2 h-max p-2 flex flex-col items-center text-center">
+                <div class="rounded-full w-[60px] bg-[#00b09b] text-[24px] font-bold flex items-center justify-center h-[60px] text-white p-1 mb-5">1</div>
+                <p class="text-[26px] lg:text-[15px]">Pembuatan akun</p>
+                <p class="mt-4 w-[90%] lg:w-max text-[20px] lg:text-[14px]">
+                    Mengisi identitas calon peserta didik sekaligus pembuatan akun untuk mendapatkan Nomor Registrasi.
+                </p>
+           </div>
+           <div class="w-[90%] mb-[40px] lg:mb-0 lg:w-[18%] relative lg:before:absolute lg:before:w-[80%] before:h-[4px] before:bg-[#00b09b] before:top-[40px] before:right-[-100px] mx-2 h-max p-2 flex flex-col items-center text-center">
+                <div class="rounded-full w-[60px] bg-[#00b09b] text-[24px] font-bold flex items-center justify-center h-[60px] text-white p-1 mb-5">2</div>
+                <p class="text-[26px] lg:text-[15px]">Login & Melengkapi Data</p>
+                <p class="mt-4 w-[90%] lg:w-max text-[20px] lg:text-[14px]">
+                    Melengkapi data peserta didik, data orang tua / wali atau mahrom khususnya santri putri.
+                </p>
+           </div>
+           <div class="w-[90%] mb-[40px] lg:mb-0 lg:w-[18%] relative lg:before:absolute lg:before:w-[80%] before:h-[4px] before:bg-[#00b09b] before:top-[40px] before:right-[-100px] mx-2 h-max p-2 flex flex-col items-center text-center">
+                <div class="rounded-full w-[60px] bg-[#00b09b] text-[24px] font-bold flex items-center justify-center h-[60px] text-white p-1 mb-5">3</div>
+                <p class="text-[26px] lg:text-[15px]">Mengunggah Berkas</p>
+                <p class="mt-4 w-[90%] lg:w-max text-[20px] lg:text-[14px]">
+                    Melengkapi data peserta didik, data orang tua / wali atau mahrom khususnya santri putri.
+                </p>
+           </div>
+           <div class="w-[90%] mb-[40px] lg:mb-0 lg:w-[18%] relative lg:before:absolute lg:before:w-[80%] before:h-[4px] before:bg-[#00b09b] before:top-[40px] before:right-[-100px] mx-2 h-max p-2 flex flex-col items-center text-center">
+                <div class="rounded-full w-[60px] bg-[#00b09b] text-[24px] font-bold flex items-center justify-center h-[60px] text-white p-1 mb-5">4</div>
+                <p class="text-[26px] lg:text-[15px]">Pembayaran</p>
+                <p class="mt-4 w-[90%] lg:w-max text-[20px] lg:text-[14px]">
+                    Melakukan pembayaran biaya pendaftaran sesuai pendidikan yang telah dipilih.
+                </p>
+           </div>
+           <div class="w-[90%] mb-[40px] lg:mb-0 lg:w-[18%] relative lg:mx-2 h-max p-2 flg:lex flex-col items-center justify-center text-center">
+                <div class="rounded-full w-[60px] bg-[#00b09b] text-[24px] font-bold flex items-center ml-auto mr-auto lg:ml-0 lg:mr-0 justify-center h-[60px] text-white p-1 mb-5">5</div>
+                <p class="text-[26px] lg:text-[15px]">Cetak Pendaftaran</p>
+                <p class="mt-4 w-[90%] lg:w-max text-[20px] lg:text-[14px]">
+                    Cetak atau simpan Nomor Registrasi sebagai bukti pendaftaran untuk ditunjukkan ke petugas PSB.
+                </p>
+           </div>
+        </div>
+    </section>
+
+    <section class="w-screen h-max p-2 lg:p-12 bg-slate-100">
+        <div class="w-full item-center lg:flex justify-center">
+            <div class="w-[100%] lg:w-[50%] mx-5 flex flex-col justify-center">
+                <h2 class="text-[38px] text-center lg:text-left mt-4 lg:mt-0 font-bold"><span class="text-[#00b09b]">Syarat</span> Pendaftaran</h2>
+                <p class="font-bold my-[20px]">Assalamu'alaikum warahmatullahi wabarakatuh</p>
+                <p>Yth. Orang tua/ wali calon santri baru YPPMYD Madania tahun 2023</p>
+                <p class="mt-4 lg:mt-4 w-[90%] lg:w-[80%] leading-[1.6em] text-black">
+                    Kami ucapkan terimakasih dan selamat bergabung di keluarga Madania.
+                    Menindaklanjuti dari keputusan yayasan dimohon untuk segera mepengkapi persyaratan berikut:
+                </p>
+                <div class="mt-6">
+                    <p class="font-bold mb-3">A. Syarat Kelembagaan</p>
+                    <ul>
+                        <li class="my-4 flex items-center">
+                            <img src="./assets/images/check.svg" class="w-[25px] h-[25px] mr-4" alt="icon">
+                            <p class="text-[14px]">SKTM yg ditandatangani kecamatan terbaru (FC 4 lembar)</p>
+                        </li>
+                        <li class="my-4 flex items-center">
+                            <img src="./assets/images/check.svg" class="w-[25px] h-[25px] mr-4" alt="icon">
+                            <p class="text-[14px]">FC Kartu Keluarga (4 lembar)</p>
+                        </li>
+                        <li class="my-4 flex items-center">
+                            <img src="./assets/images/check.svg" class="w-[25px] h-[25px] mr-4" alt="icon">
+                            <p class="text-[14px]">FC KTP orang tua/ wali (4 lembar)</p>
+                        </li>
+                        <li class="my-4 flex items-center">
+                            <img src="./assets/images/check.svg" class="w-[25px] h-[25px] mr-4" alt="icon">
+                            <p class="text-[14px]">FC Akte Kelahiran (4 lembar)</p>
+                        </li>
+                        <li class="my-4 flex items-center">
+                            <img src="./assets/images/check.svg" class="w-[25px] h-[25px] mr-4" alt="icon">
+                            <p class="text-[14px]">FC Ket Surat Kematian bagi Yatim/ Piatu/ Yatim-Piatu (4 lembar)</p>
+                        </li>
+                        <li class="my-4 flex items-center">
+                            <img src="./assets/images/check.svg" class="w-[25px] h-[25px] mr-4" alt="icon">
+                            <p class="text-[14px]">Surat Rekomendasi dari Dinsos ( Luar Kabupaten )</p>
+                        </li>
+                        <li class="my-4 flex items-center">
+                            <img src="./assets/images/check.svg" class="w-[25px] h-[25px] mr-4" alt="icon">
+                            <p class="text-[14px]">FC KIS, PKH, KIP (masing2 4 lembar apabila memiliki)</p>
+                        </li>
+                        <li class="my-4 flex items-center">
+                            <img src="./assets/images/check.svg" class="w-[25px] h-[25px] mr-4" alt="icon">
+                            <p class="text-[14px]">Buku tabungan pip (bagi yang memiliki)</p>
+                        </li>
+                        <li class="my-4 flex items-center">
+                            <img src="./assets/images/check.svg" class="w-[25px] h-[25px] mr-4" alt="icon">
+                            <p class="text-[14px]">Foto rumah (tampak depan, samping dan belakang. <br> Kamar mndi. Kamar tidur. Dapur)</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="mt-6">
+                    <p class="font-bold mb-3">B. Syarat Akademik</p>
+                    <ul>
+                        <li class="my-4 flex items-center">
+                            <img src="./assets/images/check.svg" class="w-[25px] h-[25px] mr-4" alt="icon">
+                            <p class="text-[14px]">FC Ijazah Asli </p>
+                        </li>
+                        <li class="my-4 flex items-center">
+                            <img src="./assets/images/check.svg" class="w-[25px] h-[25px] mr-4" alt="icon">
+                            <p class="text-[14px]">FC SKHUN Asli  </p>
+                        </li>
+                        <li class="my-4 flex items-center">
+                            <img src="./assets/images/check.svg" class="w-[25px] h-[25px] mr-4" alt="icon">
+                            <p class="text-[14px]">Surat Ket Kelakuan Baik dari Sekolah </p>
+                        </li>
+                        <li class="my-4 flex items-center">
+                            <img src="./assets/images/check.svg" class="w-[25px] h-[25px] mr-4" alt="icon">
+                            <p class="text-[14px]">Kartu nisn</p>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="mt-6">
+                    <p class="font-bold mb-3">Ketentuan tambahan</p>
+                    <ul>
+                        <li class="my-4 flex items-center">
+                            <img src="./assets/images/check.svg" class="w-[25px] h-[25px] mr-4" alt="icon">
+                            <p class="text-[14px]">
+                                Berkas di masukkan ke map dengan ketentutan:
+                                <br>
+                                SD : berwarna merah
+                                <br>
+                                SMP : berwarna hijau
+                                <br>
+                                MA : berwarna biru</p>
+                        </li>
+                        <li class="my-4 flex items-center">
+                            <img src="./assets/images/check.svg" class="w-[25px] h-[25px] mr-4" alt="icon">
+                            <p class="text-[14px]">Berkas dibawa dan dikumpulkan ketika <br> waktu kedatangan santri.   </p>
+                        </li>
+                        <li class="my-4 flex items-center">
+                            <img src="./assets/images/check.svg" class="w-[25px] h-[25px] mr-4" alt="icon">
+                            <p class="text-[14px]">Informasi kedatangan santri baru akan <br> kami sampaikan kemudian </p>
+                        </li>
+                    </ul>
+                    <p class="mt-8">
+                        Informasi kedatangan santri baru akan kami sampaikan kemudian
+                    </p>
+                    <p class="mt8 font-bold">
+                        Wassalamualaikum warahmatullahi wabarakatuh
+                    </p>
+                </div>
+            </div>
+            <div class="w-[90%] mt-12 lg:mt-0 lg:w-[50%] mx-5">
+                <img src="./assets/images/profile.jpg" alt="profle" class="w-[100%] rounded-[20px] mb-[30px]">
+                <img src="./assets/images/pd2.jpg" alt="profle" class="w-[100%] rounded-[20px] mb-[30px]">
+                <img src="./assets/images/pd3.jpg" alt="profle" class="w-[100%] rounded-[20px] mb-[30px]">
+            </div>
+        </div>
+        </section>
+
+    <section class="w-screen flex flex-col items-center justify-center pt-[50px] lg:pt-[100px] pb:[60px] lg:pb-[90px] px-[30px]">
+        <h2 class="text-center lg:text-left text-[40px] font-bold mb-[40px]">Alur <span class="text-[#00b09b]">Penyerahan Santri</span></h2>
+        <div class="w-screen px-12 mt-8 lg:flex flex-wrap item-center justify-center">
+            <div class="w-[90%] lg:w-[31%] justify-center relativ rounded-lg mx-3 h-[260px] p-6 flex flex-col items-center text-center">
+                <img src="./assets/images/a.svg" class="w-[40px]" mb-5 alt="icon">
+                <h2 class="text-[#00b09b] mb-3 text-[36px] font-bold">1</h2>
+                <p cla class="text-[20px]"ss="text-[15px]">Checkup / Periksa Kesehatan</p>
+                <p class="mt-4 text-[14px]">
+                    Pemeriksaan kesehatan dari calon peserta didik oleh petugas klinik Az-Zainiyah.
+                </p>
+           </div>
+           <div class="w-[90%] lg:w-[31%] justify-center relative mb-5 rounded-lg mx-3 h-[260px] p-6 flex flex-col items-center text-center">
+            <img src="./assets/images/b.svg" class="w-[28px]" mb-5 alt="icon">    
+            <h2 class="text-[#00b09b] mb-3 text-[36px] font-bold">2</h2>
+                <p class="text-[20px]" class="text-[15px]">Konfirmasi Nomor Registrasi</p>
+                <p class="mt-4 text-[14px]">
+                    Menyerahkan Nomor Registrasi dan bukti pendaftaran online kepada petugas PSB.
+                </p>
+           </div>
+           <div class="w-[90%] lg:w-[31%] justify-center relative mb-5 rounded-lg mx-3 h-[260px] p-6 flex flex-col items-center text-center">
+            <img src="./assets/images/c.svg" class="w-[36px]" mb-5 alt="icon">    
+            <h2 class="text-[#00b09b] mb-3 text-[36px] font-bold">3</h2>
+                <p class="text-[20px]" class="text-[15px]">Ikrar Santri</p>
+                <p class="mt-4 text-[14px]">
+                    Melakukan Ikrar Santri dan kesediaan mengikuti aturan yang ditetapkan oleh Pondok Pesantren Nurul Jadid.
+                </p>
+           </div>
+           <div class="w-[90%] lg:w-[31%] justify-center relative mb-5 rounded-lg mx-3 h-[260px] p-6 flex flex-col items-center text-center">
+            <img src="./assets/images/d.svg" class="w-[40px]" mb-5 alt="icon">    
+            <h2 class="text-[#00b09b] mb-3 text-[36px] font-bold">4</h2>
+                <p class="text-[20px]" class="text-[15px]">Pengambilan Seragam</p>
+                <p class="mt-4 text-[14px]">
+                    Pengambilan seragam sesuai dengan pemilihan ukuran seragam yang telah dipilih oleh pendaftar.
+                </p>
+           </div>
+           <div class="w-[90%] lg:w-[31%] justify-center relative mb-5 text-center rounded-lg mx-3 h-[260px] flex flex-col items-center p-6">
+            <img src="./assets/images/e.svg" class="w-[40px]" mb-5 alt="icon">    
+            <h2 class="text-[#00b09b] mb-3 text-[36px] font-bold">5</h2>
+                <p class="text-[20px]">Sowan Pengasuh</p>
+                <p class="mt-4 text-[14px]">
+                    Penyerahan calon peserta didik oleh orangtua / wali kepada pengasuh
+                </p>
+           </div>
+           <div class="w-[90%] lg:w-[31%] justify-center relative mb-5 rounded-lg text-center h-[260px] mx-3 flex flex-col items-center p-6">
+            <img src="./assets/images/f.svg" class="w-[40px]" mb-5 alt="icon">   
+            <h2 class="text-[#00b09b] mb-3 text-[36px] font-bold">6</h2>
+                <p class="text-[20px]">Asrama Santri</p>
+                <p class="mt-4 text-[14px]">
+                    Santri baru menempati asrama yang telah ditetepkan oleh pengurus.
+                </p>
+           </div>
+        </div>
+    </section>
+
+
+    <section class="w-screen lg:flex h-max px-12 pt-[50px] lg:pt-[50px] pb-[50px] bg-slate-100">
+        <div class="w-[100%] lg:w-[50%] h-max lg:h-[400px] flex flex-col justify-center items-center">
+            <img src="./assets/images/pondok.jpg" class="rounded-lg lg:mb-0 mb-[20px] w-[80%]" alt="img">
+        </div>
+        <div class="w-[100%] lg:w-[50%] flex flex-col justify-center">
+            <h2 class="text-[32px] lg:text-[40px] text-center lg:text-left font-bold mb-[40px]">Informasi <span class="text-[#00b09b]">Pelayanan Pendaftaran</span></h2>
+            <div class="accordion">
+                <div class="accordion-item">
+                  <div class="accordion-heading" onclick="toggleAccordion(this)">
+                    <h3 class="accordion-title">Pembukaan Pendaftaran & Kantor Layanan:</h3>
+                    <button class="accordion-toggle"><i class="fas fa-plus"></i></button>
+                  </div>
+                  <div class="accordion-content">
+                    <h2>Tanggal:</h2>
+                    <p><strong>1 Maret s.d. 19 Juni 2023</strong></p>
+                    <br>
+                    <h2>Layanan Putra:</h2>
+                    <p><strong>Kantor Sekretariat Putra</strong></p>
+                    <br>
+                    <h2>Layanan Putri:</h2>
+                    <p><strong>Kantor Sekretariat Putri</strong></p>
+                  </div>
+                </div>
+            
+                <div class="accordion-item">
+                  <div class="accordion-heading" onclick="toggleAccordion(this)">
+                    <h3 class="accordion-title">Penerimaan Satu Atap & Verifikasi Berkas:</h3>
+                    <button class="accordion-toggle"><i class="fas fa-plus"></i></button>
+                  </div>
+                  <div class="accordion-content">
+                    <h2>Tanggal:</h2>
+                    <p><strong>14 Juni s.d. 19 Juni 2023</strong></p>
+                    <br>
+                    <h2>Tempat Penerimaan:</h2>
+                    <p><strong>Aula II Pesantren, Lantai 3</strong></p>
+                  </div>
+                </div>
+            
+                <div class="accordion-item">
+                  <div class="accordion-heading" onclick="toggleAccordion(this)">
+                    <h3 class="accordion-title">Waktu Pelayanan:</h3>
+                    <button class="accordion-toggle"><i class="fas fa-plus"></i></button>
+                  </div>
+                  <div class="accordion-content">
+                    <h2>Pagi:</h2>
+                    <p><strong>08.00 ~ 12.00 WIB</strong></p>
+                    <br>
+                    <h2>Siang:</h2>
+                    <p><strong>13.00 ~ 16.00 WIB</strong></p>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </section>
+
+    <footer class="w-screen flex flex-col items-center justify-between h-max px-12 pt-12 bg-[#555]">
+        <div class="w-screen lg:flex items-center pt-[14px] pb-[30px] justify-between">
+            <div class="w-[100%] lg:w-[50%] pl-[50px]">
+                <h2 class="mb-5 text-[20px] text-white">Pondok Pesantren Nurul Jadid</h2>
+                <p class="text-white leading-8">
+                    Jl. KH. Zaini Mun'im, Dusun Tanjung Lor, Desa Karanganyar,
+                    <br>
+                    Paiton - Probolinggo,
+                    <br>
+                    Jawa Timur 67291.
+                    <br>
+                    Telp. (0888-307-7077)
+                </p>
+            </div>
+            <div class="w-[100%] lg:w-[20%] pl-[50px] lg:mt-0 mt-[50px] lg:pl-0 text-white">
+                <h2 class="mb-5 text-[20px] text-white">Social Pages</h2>
+                <p class="flex items-center mb-4"><img class="mr-3 w-[16px]" src="./assets/images/fb.svg" alt="fb" />Facebook</p>
+                <p class="flex items-center mb-4"><img class="mr-3 w-[16px]" src="./assets/images/tw.svg" alt="tw" />Twitter</p>
+                <p class="flex items-center mb-4"><img class="mr-3 w-[16px]" src="./assets/images/ig.svg" alt="ig" />Instagram</p>
+                <p class="flex items-center mb-4"><img class="mr-3 w-[16px]" src="./assets/images/yt.svg" alt="yt" />Youtube</p>
+            </div>
+            <div class="w-[100%] lg:w-[30%] pl-[50px] lg:mt-0 mt-[50px] lg:pl-0 text-white">
+                <h2 class="mb-5 text-[20px] text-white flex items-center"><img src="./assets/images/phone.svg" alt="phone" class="mr-3" />Pusat Layanan Informasi</h2>
+                <p class="mb-4">0813-3622-2034 (Sekretariat Putra)</p>
+                <p class="mb-4">0821-4639-3907 (Sekretariat Putri)</p>
+                <p class="mb-4">0852-5880-0137 (Keuangan)</p>
+                <p class="mb-4">0822-4633-5137 (Layanan Umum)</p>
+            </div>
+        </div>
+        <div class="text-center h-max w-full py-4 border-t-[1px] border-t-white flex text-white items-center justify-center">
+            <p class="text-[16px]">©Copyright © 2019 - 2023 - Nurul Jadid</p>
+        </div>
+    </footer>
+
+    <script>
+       function toggleAccordion(heading) {
+            const accordionItem = heading.parentNode;
+            accordionItem.classList.toggle('active');
+       }
+    </script>
+
+</body>
+</html>

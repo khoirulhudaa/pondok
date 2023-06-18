@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pondok pesantren</title>
+
+    <!-- Link to google fonts - Poppins  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,900&display=swap" rel="stylesheet">
+    
+    <!-- Meta tags untuk SEO -->
+    <meta name="description" content="Deskripsi singkat mengenai halaman web Anda">
+    <meta name="keywords" content="kata kunci, yang, relevan, dengan, halaman, web, Anda">
+    <meta name="author" content="Nama Anda">
+    <meta name="robots" content="index, follow"> <!-- Mengizinkan robot mesin pencari untuk mengindeks halaman dan mengikuti tautan -->
+    
+    <!-- Meta tags untuk responsif -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Link css -->
+    <link rel="stylesheet" href="./styles.css">
+
+    <!-- Link cdn to tailwindcss + postcss -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="overflow-x-hidden">
+
+<div class="w-screen flex bg-gradient-to-r from-[#00b09b] shadow-lg z-20 to-[#96c93d] h-max px-[20px] lg:px-[100px] py-[20px] items-center lg:justify-between">
+    <div class="w-max text-white h-max px-[20px] border-[1px] border-white text-center flex items-center justify-center cursor-pointer hover:brightness-[90%] active:scale-[0.97] py-[8px]">
+        Kembali
+    </div>
+    <h2 class="text-white text-[26px] lg:ml-0 ml-[20px]">Formulir Pendaftaran</h2>
+    <div class="hidden lg:inline w-max h-max px-[20px] bg-slate-200 text-black border-[1px] border-white text-center flex items-center justify-center cursor-pointer hover:brightness-[90%] active:scale-[0.97] py-[8px]">
+        Daftar
+    </div>    
+</div>
+
+<section class="w-[90%] lg:w-[80%] border-[2px] border-dashed border-slate-200 ml-auto mr-auto h-max mt-[30px]">
+    <div class="w-full h-max px-[12px] py-[10px] bg-slate-200">
+        <p>Biodata Pesertadidik</p>
+    </div>
+    <div class="p-8">
+        <form action="post">
+            <div class="lg:flex items-center mb-5">
+                <div class="w-[250px]">
+                    <label>Kewarganegaraan</label>
+                </div>
+                <div class="flex w-[100%] items-center lg:mt-0 mt-2 ml-[-15px] lg:ml-4">
+                    <input type="radio" class="mx-4" value="wni" name="kewarganegaraan">WNI
+                    <input type="radio" class="mx-4" value="wni" name="kewarganegaraan">WNA
+                </div>
+            </div>
+           
+            <div class="lg:flex lg:items-center mb-5">
+                <div class="w-[250px]">
+                    <label>Nomor Passport</label>
+                </div>
+                <div class="flex items-center lg:mt-0 mt-2 lg:ml-[-6px]">
+                    <input type="text" placeholder="Nomor passport" class="border-[1px] text-[13px] outline-0 border-slate-200 p-3 w-[200px] h-[35px] lg:ml-10" value="" name="">
+                </div>
+            </div>  
+           
+            <div class="lg:flex items-center mb-5">
+                <div class="w-[250px]">
+                    <label>Nomor KK</label>
+                </div>
+                <div class="flex items-center lg:mt-0 mt-2 lg:mt-0 mt-2 lg:ml-[-6px]">
+                    <input type="text" placeholder="Nomor.Kartu.Keluarga" class="border-[1px] text-[13px] outline-0 border-slate-200 p-3 w-[200px] h-[35px] lg:lg:ml-10" value="" name="">
+                </div>
+            </div>
+           
+            <div class="lg:flex items-center mb-5">
+                <div class="w-[250px]">
+                    <label>NIK</label>
+                </div>
+                <div class="flex items-center lg:mt-0 mt-2 lg:ml-[-6px]">
+                    <input type="text" placeholder="NIK" class="border-[1px] text-[13px] outline-0 border-slate-200 p-3 w-[200px] h-[35px] lg:ml-10" value="" name="">
+                </div>
+            </div>
+           
+            <div class="lg:flex items-center mb-5">
+                <div class="w-[250px]">
+                    <label>Nama lengkap</label>
+                </div>
+                <div class="flex items-center lg:mt-0 mt-2 lg:ml-[-6px]">
+                    <input type="text" placeholder="Nama lengkap" class="border-[1px] text-[13px] outline-0 border-slate-200 p-3 w-[200px] h-[35px] lg:ml-10" value="" name="">
+                </div>
+            </div>
+
+            <div class="lg:flex items-center mb-5">
+                <div class="w-[250px]">
+                    <label>Jenis kelamin</label>
+                </div>
+                <div class="flex items-center ml-[-10px] lg:mt-0 mt-2 lg:ml-4">
+                    <input type="radio" class="mx-4" value="wni" name="kewarganegaraan">Perempuan
+                    <input type="radio" class="mx-4" valwni name="kewarganegaraan">Laki-laki
+                </div>
+            </div>
+
+            <div class="lg:flex items-center mb-5">
+                <div class="w-[250px]">
+                    <label>Tempat Lahir</label>
+                </div>
+                <div class="flex items-center lg:mt-0 mt-2 lg:ml-[-6px]">
+                    <input type="text" placeholder="Nama lengkap" class="border-[1px] text-[13px] outline-0 border-slate-200 p-3 w-[200px] h-[35px] lg:ml-10" value="" name="">
+                </div>
+            </div>
+        
+            <div class="lg:flex items-center mb-5">
+                <div class="w-[250px]">
+                    <label>Tanggal Lahir</label>
+                </div>
+                <div class="flex items-center lg:mt-0 mt-2 lg:ml-[-6px]">
+                    <input type="date" placeholder="Tanggal lahir" class="border-[1px] text-[13px] outline-0 border-slate-200 p-3 w-[200px] h-[35px] lg:ml-10" value="" name="">
+                </div>
+            </div>
+        
+            <div class="lg:flex items-center mb-5">
+                <div class="w-[250px]">
+                    <label>Anak ke</label>
+                </div>
+                <div class="flex items-center lg:mt-0 mt-2 lg:ml-[-6px]">
+                    <input type="number" placeholder="0" class="border-[1px] mr-4 text-[13px] outline-0 border-slate-200 text-center w-[40px] h-[35px] lg:ml-10" value="" name="">
+                    Dari <input type="number" placeholder="0" class="border-[1px] ml-5 text-[13px] outline-0 border-slate-200 w-[40px] text-center h-[35px] lg:ml-10" value="" name="">
+                </div>
+            </div>
+
+            <hr>
+            
+            <div class="lg:flex items-center mt-[40px] mb-5">
+                <div class="w-[250px]">
+                    <label>Tinggal bersama</label>
+                </div>
+                <div class="flex items-center lg:mt-0 mt-2 lg:ml-[-6px]">
+                    <input type="text" placeholder="Tinggal bersama" class="border-[1px] text-[13px] outline-0 border-slate-200 p-3 w-[200px] h-[35px] lg:ml-10" value="" name="">
+                </div>
+            </div>
+            
+            <div class="lg:flex items-center mb-5">
+                <div class="w-[250px]">
+                    <label>Pendidikan Terakhir</label>
+                </div>
+                <div class="flex items-center lg:mt-0 mt-2 lg:ml-[-6px]">
+                    <input type="text" placeholder="Pendidikan terakhir" class="border-[1px] text-[13px] outline-0 border-slate-200 p-3 w-[200px] h-[35px] lg:ml-10" value="" name="">
+                </div>
+            </div>
+            
+            <hr>
+            
+            <div class="lg:flex items-center mt-[40px] mb-5">
+                <div class="w-[250px]">
+                    <label>Negara</label>
+                </div>
+                <div class="flex items-center lg:mt-0 mt-2 lg:ml-[36px]">
+                    <select name="" id="" class="bg-white border-[1px] border-slate-200 px-4 py-1">
+                        <option value="">Indonesia</option>
+                        <option value="">Indonesia</option>
+                        <option value="">Indonesia</option>
+                        <option value="">Indonesia</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="lg:flex items-center mb-5">
+                <div class="w-[250px]">
+                    <label>Provinsi</label>
+                </div>
+                <div class="flex items-center lg:mt-0 mt-2 lg:ml-[36px]">
+                    <select name="" id="" class="bg-white border-[1px] border-slate-200 px-4 py-1">
+                        <option value="">Indonesia</option>
+                        <option value="">Indonesia</option>
+                        <option value="">Indonesia</option>
+                        <option value="">Indonesia</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="lg:flex items-center mb-5">
+                <div class="w-[250px]">
+                    <label>Kabupaten</label>
+                </div>
+                <div class="flex items-center lg:mt-0 mt-2 lg:ml-[36px]">
+                    <select name="" id="" class="bg-white border-[1px] border-slate-200 px-4 py-1">
+                        <option value="">Indonesia</option>
+                        <option value="">Indonesia</option>
+                        <option value="">Indonesia</option>
+                        <option value="">Indonesia</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="lg:flex items-center mb-5">
+                <div class="w-[250px]">
+                    <label>Kecamatan</label>
+                </div>
+                <div class="flex items-center lg:mt-0 mt-2 lg:ml-[36px]">
+                    <select name="" id="" class="bg-white border-[1px] border-slate-200 px-4 py-1">
+                        <option value="">Indonesia</option>
+                        <option value="">Indonesia</option>
+                        <option value="">Indonesia</option>
+                        <option value="">Indonesia</option>
+                    </select>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="lg:flex items-center mt-[40px] mb-5">
+                <div class="w-[250px]">
+                    <label>Jalan</label>
+                </div>
+                <div class="flex items-center lg:mt-0 mt-2 lg:ml-[-6px]">
+                    <input type="text" placeholder="Jalan atau Detail Alamat" class="border-[1px] text-[13px] outline-0 border-slate-200 p-3 w-[420px] h-[35px] lg:ml-10" value="" name="">
+                </div>
+            </div>
+
+            <div class="lg:flex items-center mb-5">
+                <div class="w-[250px]">
+                    <label>Kode POS</label>
+                </div>
+                <div class="flex items-center lg:mt-0 mt-2 lg:ml-[-6px]">
+                    <input type="text" placeholder="Kode Pos" class="border-[1px] text-[13px] outline-0 border-slate-200 p-3 w-[200px] h-[35px] lg:ml-10" value="" name="">
+                </div>
+            </div>
+
+            <div class="w-full h-max px-[12px] mt-[50px] py-[10px] bg-slate-200">
+                <p>Rencana Pendidikan</p>
+            </div>
+            
+            <div class="lg:flex items-center mt-[40px] mb-5">
+                <div class="w-[250px]">
+                    <label>Mondok</label>
+                </div>
+                <div class="flex items-center lg:ml-4">
+                    <input type="radio" class="mx-4" value="ya" name="mondok">Ya
+                    <input type="radio" class="mx-4" value="tidak" name="mondok">Tidak
+                </div>
+            </div>
+
+            <div class="lg:flex items-center mb-5">
+                <div class="w-[250px]">
+                    <label>Jenis Pendaftaran</label>
+                </div>
+                <div class="flex items-center lg:mt-0 mt-2 lg:ml-[36px]">
+                    <select name="" id="" class="bg-white border-[1px] border-slate-200 px-4 py-1">
+                        <option value="">Mandiri</option>
+                        <option value="">Mandiri</option>
+                        <option value="">Mandiri</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="lg:flex items-center mb-5">
+                <div class="w-[250px]">
+                    <label>Lembaga</label>
+                </div>
+                <div class="flex items-center lg:mt-0 mt-2 lg:ml-[36px]">
+                    <select name="" id="" class="bg-white w-[400px] border-[1px] border-slate-200 px-4 py-1">
+                        <option value="">Mandiri</option>
+                        <option value="">Mandiri</option>
+                        <option value="">Mandiri</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="lg:flex items-center mb-5">
+                <div class="w-[250px]">
+                    <label>Jurusan</label>
+                </div>
+                <div class="flex items-center lg:mt-0 mt-2 lg:ml-[36px]">
+                    <select name="" id="" class="bg-white border-[1px] border-slate-200 px-4 py-1">
+                        <option value="">Mandiri</option>
+                        <option value="">Mandiri</option>
+                        <option value="">Mandiri</option>
+                    </select>
+                </div>
+            </div>
+
+            <hr>
+              
+            <div class="lg:flex items-center mt-[40px] mb-5">
+                <div class="w-[250px]">
+                    <label>Ukuran Seragam</label>
+                </div>
+                <div class="flex lg:flex-nowrap flex-wrap items-center lg:ml-4">
+                    <input type="radio" class="mx-4 lg:my-0 my-3" value="ya" name="mondok">2XS
+                    <input type="radio" class="mx-4 lg:my-0 my-3" value="tidak" name="mondok">XS
+                    <input type="radio" class="mx-4 lg:my-0 my-3" value="tidak" name="mondok">S
+                    <input type="radio" class="mx-4 lg:my-0 my-3" value="tidak" name="mondok">M
+                    <input type="radio" class="mx-4 lg:my-0 my-3" value="tidak" name="mondok">L
+                    <input type="radio" class="mx-4 lg:my-0 my-3" value="tidak" name="mondok">XL
+                    <input type="radio" class="mx-4 lg:my-0 my-3" value="tidak" name="mondok">2XL
+                    <input type="radio" class="mx-4 lg:my-0 my-3" value="tidak" name="mondok">3XL
+                    <input type="radio" class="mx-4 lg:my-0 my-3" value="tidak" name="mondok">4XL
+                </div>
+            </div>
+
+            <div class="w-full h-max px-[12px] mt-[50px] py-[10px] bg-slate-200">
+                <p>Akun Pendaftaran</p>
+            </div>
+
+            <div class="lg:flex items-center mt-[40px] mb-5">
+                <div class="w-[250px]">
+                    <label>E-Mail</label>
+                </div>
+                <div class="flex items-center lg:mt-0 mt-2 lg:ml-[-6px]">
+                    <input type="text" placeholder="Masukan E-Mail" class="border-[1px] text-[13px] outline-0 border-slate-200 p-3 w-[200px] h-[35px] lg:ml-10" value="" name="">
+                </div>
+            </div>
+
+            <div class="lg:flex items-center mb-5">
+                <div class="w-[250px]">
+                    <label>No. Telp</label>
+                </div>
+                <div class="flex items-center lg:mt-0 mt-2 lg:ml-[-6px]">
+                    <input type="text" placeholder="+62xxxxxxxxx" class="border-[1px] text-[13px] outline-0 border-slate-200 p-3 w-[200px] h-[35px] lg:ml-10" value="" name="">
+                </div>
+            </div>
+            
+            <hr>
+
+            <div class="lg:flex items-center mt-[40px] mb-5">
+                <div class="w-[250px]">
+                    <label>Kata Sandi</label>
+                </div>
+                <div class="flex items-center lg:mt-0 mt-2 lg:ml-[-6px]">
+                    <input type="text" placeholder="Masukan Kata Sandi" class="border-[1px] text-[13px] outline-0 border-slate-200 p-3 w-[200px] h-[35px] lg:ml-10" value="" name="">
+                </div>
+            </div>
+
+            <div class="lg:flex items-center mb-5">
+                <div class="w-[250px]">
+                    <label>Ketik Ulang Kata Sandi</label>
+                </div>
+                <div class="flex items-center lg:mt-0 mt-2 lg:ml-[-6px]">
+                    <input type="text" placeholder="Konfirmasi Kata Sandi" class="border-[1px] text-[13px] outline-0 border-slate-200 p-3 w-[200px] h-[35px] lg:ml-10" value="" name="">
+                </div>
+            </div>
+
+            <div class="w-max h-max px-[50px] py-[8px] rounded-[4px] bg-green-500 text-white cursor-pointer mt-10 lg:ml-[285px] hover:brightness-[90%] active:scale-[0.97]">
+                Daftar
+            </div>
+
+        </form>
+    </div>
+</section>
+
+</body>
+</html>

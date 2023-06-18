@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pondok pesantren</title>
+
+    <!-- Link to google fonts - Poppins  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,900&display=swap" rel="stylesheet">
+    
+    <!-- Meta tags untuk SEO -->
+    <meta name="description" content="Deskripsi singkat mengenai halaman web Anda">
+    <meta name="keywords" content="kata kunci, yang, relevan, dengan, halaman, web, Anda">
+    <meta name="author" content="Nama Anda">
+    <meta name="robots" content="index, follow"> <!-- Mengizinkan robot mesin pencari untuk mengindeks halaman dan mengikuti tautan -->
+    
+    <!-- Meta tags untuk responsif -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Link css -->
+    <link rel="stylesheet" href="./styles.css">
+
+    <!-- Link cdn to tailwindcss + postcss -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="overflow-x-hidden">
+
+    <section class="w-scren lg:flex items-center justify-between h-[100vh]">
+        <div class="w-[45%] hidden lg:flex h-full overflow-hidden">
+            <img src="./assets/images/login.jpg" class="w-full" alt="img">
+        </div>
+        <div class="w-[100%] lg:w-[55%] h-full flex flex-col">
+            <div class="w-[90%] lg:w-[60%] mt-16 lg:mt-10 ml-auto mr-auto">
+                <img src="./assets/images/logoPondok.png" class="w-[50px] mb-6" alt="logo">
+                <h1 class="mb-[20px] text-[46px]"><strong>PSB</strong> Nurul Jadid</h1>
+                <form action="">
+                    <div class="mb-[20px]">
+                        <label for="form">No. Registrasi</label>
+                        <input type="text" name="" placeholder="No. Registrasi" class="w-[90%] outline-0 border-0 bg-white rounded-lg px-6 mt-4 py-4 shadow-md">
+                    </div>
+                    <div class="mb-[20px]">
+                        <label for="form">No. Registrasi</label>
+                        <input type="text" name="" placeholder="No. Registrasi" class="w-[90%] outline-0 border-0 bg-white rounded-lg px-6 mt-4 py-4 shadow-md">
+                    </div>
+                    <p class="my-8 text-[14px]">
+                        Belum memiliki akun? <a href="" class="text-yellow-500">Buat baru</a>
+                        Atau <a href="" class="text-yellow-500">Lupa Password</a>
+                    </p>
+                    <div class="w-[100%] bg-[#f0ae19] text-center text-white cursor-pointer px-12 py-4 hover:brightness-[90%] active:scale-[0.98] mb-5">
+                        Login
+                    </div>
+                    <p class="text-center">Kembali ke <a href="/homepage.html" class="text-[#f0ae19]">Home</a></p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
