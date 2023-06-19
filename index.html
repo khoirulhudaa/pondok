@@ -28,7 +28,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="overflow-x-hidden">
-    <section class="rounded-br-[140px] flex items-center justify-center bg-gradient-to-r from-[#00b09b] to-[#96c93d] w-screen h-max lg:h-[80vh] px-2 lg:px-12">
+    <section class="overflow-hidden rounded-br-[140px] flex items-center justify-center bg-gradient-to-r from-[#00b09b] to-[#96c93d] w-screen h-max lg:h-[80vh] px-2 lg:px-12">
         <div class="lg:flex items-center justify-center pb-[50px] lg:pb-0">
             <div class="w-[100%] lg:w-[40%] flex lg:inline my-12 lg:my-0 items-center justify-center">
                 <img src="./assets/images/logoPondok.png" alt="logo" class="w-[80%] lg:w-[320px] mr-6">
@@ -47,7 +47,7 @@
         </div>
     </section>
 
-    <section class="w-screen flex flex-col items-center justify-center py-[60px] px-[30px]">
+    <section class="overflow-hidden w-[100vw] lg:w-screen flex flex-col items-center justify-center py-[60px] px-[30px]">
         <h2 class="text-[40px] font-500">Visi & Misi</h2>
         <div class="w-screen lg:flex item-center justify-center">
             <div class="w-[90%] lg:w-[30%] mt-[40px] border-[1px] border-slate-400 rounded-lg mx-4 p-6 h-max">
@@ -71,7 +71,7 @@
         </div>
     </section>
 
-    <section class="w-screen h-max p-2 lg:p-12">
+    <section class="overflow-hidden w-[100vw] lg:w-screen h-max p-2 lg:p-12">
         <div class="w-full item-center lg:flex justify-center">
             <div class="w-[90%] lg:w-[50%] mx-5">
                 <img src="./assets/images/profile.jpg" alt="profle" class="w-[100%] rounded-[20px]">
@@ -92,18 +92,26 @@
         </div>
     </section>
 
-     <footer class="w-screen flex flex-col items-center mt-12 justify-between h-max px-12 pt-12 bg-[#555]">
+     <footer class="w-[100vw] overflow-hidden lg:w-screen flex flex-col items-center mt-12 justify-between h-max lg:px-12 pt-6 lg:pt-12 bg-[#555]">
         <div class="w-screen lg:flex items-center pt-[14px] pb-[30px] justify-between">
-            <div class="w-[100%] lg:w-[50%] pl-[50px]">
+            <div class="w-[100%] lg:w-[50%] pl-[40px]">
                 <h2 class="mb-5 text-[20px] text-white">Pondok Pesantren Nurul Jadid</h2>
                 <p class="text-white leading-8">
-                    Jl. KH. Zaini Mun'im, Dusun Tanjung Lor, Desa Karanganyar,
+                    <p class="w-[90%] text-white lg:w-max">
+                        Jl. KH. Zaini Mun'im, Dusun Tanjung Lor, Desa Karanganyar,
+                    </p>
                     <br>
-                    Paiton - Probolinggo,
+                    <p class="text-white">
+                        Paiton - Probolinggo,
+                    </p>
                     <br>
-                    Jawa Timur 67291.
+                    <p class="text-white">
+                        Jawa Timur 67291.
+                    </p>
                     <br>
-                    Telp. (0888-307-7077)
+                    <p class="text-white">
+                        Telp. (0888-307-7077)
+                    </p>
                 </p>
             </div>
             <div class="w-[100%] lg:w-[20%] pl-[50px] lg:mt-0 mt-[50px] lg:pl-0 text-white">
