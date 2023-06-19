@@ -32,18 +32,62 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="overflow-x-hidden">
-    <nav class="flex items-center justify-between px-8 lg:px-[140px] py-4 bg-gradient-to-r from-[#00b09b] shadow-lg z-20 to-[#96c93d] w-screen h-max">
-        <div class="flex items-center text-white">
+    <div id="sidebare" class="sidebarHide">
+        <img src="./assets/images/x.svg" alt="icon" id="closeX" class="w-[24px] absolute top-8 right-8 cursor-pointer hover:brightness-[90%] active:scale-[0.97]">
+        <ul class="w-max text-black ml-6 mt-3 mr-3 lg:hidden lg:flex item-center">
+            <a href="#alur" class="text-black text-[20px] lg:text-[18px] mb-3 mx-4 hover:brightness-[90%] active:scale-[0.98]">
+                <li>Alur pendaftaran</li>
+            </a>
+            <a href="#syarat" class="text-black text-[20px] lg:text-[18px] mb-3 mx-4 hover:brightness-[90%] active:scale-[0.98]">
+                <li>Syarat</li>
+            </a>
+            <a href="#penyerahan" class="text-black text-[20px] lg:text-[18px] mb-3 mx-4 hover:brightness-[90%] active:scale-[0.98]">
+                <li>Penyerahan</li>
+            </a>
+            <a href="#pelayanan" class="text-black text-[20px] lg:text-[18px] mb-3 mx-4 hover:brightness-[90%] active:scale-[0.98]">
+                <li>Pelayanan</li>
+            </a>
+            <a href="#kontak" class="text-black text-[20px] lg:text-[18px] mb-3 mx-4 hover:brightness-[90%] active:scale-[0.98]">
+                <li>Kontak</li>
+            </a>
+        </ul>
+    </div>
+    <nav class="flex items-center justify-between px-8 lg:px-[50px] py-4 bg-gradient-to-r from-[#00b09b] shadow-lg z-20 to-[#96c93d] w-screen h-max">
+        <div class="lg:flex items-center text-white hidden">
             <img src="./assets/images/logoPondok.png" alt="logo" class="w-[50px]">
             <h2 class="hidden lg:inline text-white font-bold text-[22px] ml-4">Pondok al-qomariyah</h2>
         </div>
-        <div class="flex items-center">
-            <a href="./register.html">
-                <div class="w-max h-max px-6 py-3 rounded-full text-center cursor-pointer hover:brightness-[90%] bg-white text-green-500 mr-4 active:scale-[0.97]">Daftar</div>
-            </a>
-            <a href="./login.html">
-                <div class="w-max h-max px-6 py-3 rounded-full text-center cursor-pointer hover:brightness-[90%] bg-[#f5ae10] text-white active:scale-[0.97]">Login</div>
-            </a>
+        <div class="flex items-center w-full lg:w-max justify-between lg:justify-center">
+            <div class="flex w-max">
+                <ul class="w-max text-white mt-3 mr-3 hidden lg:flex item-center">
+                    <a href="#alur" class="mx-4 hover:brightness-[90%] active:scale-[0.98]">
+                        <li>Alur pendaftaran</li>
+                    </a>
+                    <a href="#syarat" class="mx-4 hover:brightness-[90%] active:scale-[0.98]">
+                        <li>Syarat</li>
+                    </a>
+                    <a href="#penyerahan" class="mx-4 hover:brightness-[90%] active:scale-[0.98]">
+                        <li>Penyerahan</li>
+                    </a>
+                    <a href="#pelayanan" class="mx-4 hover:brightness-[90%] active:scale-[0.98]">
+                        <li>Pelayanan</li>
+                    </a>
+                    <a href="#kontak" class="mx-4 hover:brightness-[90%] active:scale-[0.98]">
+                        <li>Kontak</li>
+                    </a>
+                </ul>
+                <a href="./register.html">
+                    <div class="w-max h-max px-6 py-3 rounded-full text-center cursor-pointer hover:brightness-[90%] bg-white text-green-500 mr-4 active:scale-[0.97]">Daftar</div>
+                </a>
+                <a href="./login.html">
+                    <div class="w-max h-max px-6 py-3 rounded-full text-center cursor-pointer hover:brightness-[90%] bg-[#f5ae10] text-white active:scale-[0.97]">Login</div>
+                </a>
+            </div>
+            <div class="btnSidebar flex flex-col ml-auto lg:ml-0 lg:mt-0 cursor-pointer hover:brightness-[90%] active:scale-[0.97] lg:hidden w-max h-max">
+                <div class="relative w-[30px] h-[4px] rounded-md bg-white mb-[5px]"></div>
+                <div class="relative w-[30px] h-[4px] rounded-md bg-white mb-[5px]"></div>
+                <div class="relative w-[30px] h-[4px] rounded-md bg-white mb-[5px]"></div>
+            </div>
         </div>
     </nav>
 
@@ -66,7 +110,7 @@
         </div>
     </section>
 
-    <section class="w-screen flex flex-col items-center justify-center pt-[80px] lg:pt-[100px] pb-[120px] px-[30px]">
+    <section id="alur" class="w-screen flex flex-col items-center justify-center pt-[80px] lg:pt-[100px] pb-[120px] px-[30px]">
         <h2 class="text-[40px] text-center font-bold mb-[40px]"><span class="text-[#00b09b]">Alur</span> Pendaftaran Online</h2>
         <div class="w-screen px-6 lg:px-12 flex-wrap mt-8 lg:flex item-center justify-center">
             <div class="rounded-lg w-[100%] lg:bg-transparent bg-white lg:shadow-none shadow-lg mb-[40px] lg:mb-0 lg:w-[18%] relative lg:before:absolute lg:before:w-[80%] before:h-[4px] before:bg-[#00b09b] before:top-[40px] before:right-[-100px] lg:mx-2 h-max p-2 flex flex-col items-center text-center">
@@ -111,16 +155,10 @@
         </div>
     </section>
 
-    <section class="lg:w-screen h-max p-2 lg:p-12 bg-slate-100">
+    <section id="syarat" class="lg:w-screen h-max p-2 lg:p-12 bg-slate-100">
         <div class="w-full item-center lg:flex justify-center">
             <div class="w-[100%] lg:w-[50%] lg:mx-5 flex flex-col justify-center">
                 <h2 class="text-[38px] text-center lg:text-left mt-4 lg:mt-0 font-bold"><span class="text-[#00b09b]">Syarat</span> Pendaftaran</h2>
-                <p class="lg:ml-0 ml-3 text-[14px] lg:text-[18px] font-bold my-[20px]">Assalamu'alaikum warahmatullahi wabarakatuh</p>
-                <p class="lg:ml-0 ml-3">Yth. Orang tua/ wali calon santri baru YPPMYD Madania tahun 2023</p>
-                <p class="lg:ml-0 ml-3 mt-4 lg:mt-4 w-[90%] lg:w-[80%] leading-[1.6em] text-black">
-                    Kami ucapkan terimakasih dan selamat bergabung di keluarga Madania.
-                    Menindaklanjuti dari keputusan yayasan dimohon untuk segera mepengkapi persyaratan berikut:
-                </p>
                 <div class="mt-6 lg:pl-0 pl-3">
                     <p class="font-bold mb-3">A. Syarat Kelembagaan</p>
                     <ul>
@@ -208,23 +246,16 @@
                             <p class="text-[14px]">Informasi kedatangan santri baru akan <br> kami sampaikan kemudian </p>
                         </li>
                     </ul>
-                    <p class="mt-8">
-                        Informasi kedatangan santri baru akan kami sampaikan kemudian
-                    </p>
-                    <p class="mt-8 text-[14px] lg:text-[18px] font-bold">
-                        Wassalamualaikum warahmatullahi wabarakatuh
-                    </p>
                 </div>
             </div>
             <div class="w-[90%] mt-12 lg:mt-0 lg:w-[50%] mx-5">
-                <img src="./assets/images/profile.jpg" alt="profle" class="w-[100%] rounded-[20px] mb-[30px]">
+                <img src="./assets/images/profile.jpg" alt="profle" class="w-[100%] rounded-[20px] mb-[100px]">
                 <img src="./assets/images/pd2.jpg" alt="profle" class="w-[100%] rounded-[20px] mb-[30px]">
-                <img src="./assets/images/pd3.jpg" alt="profle" class="w-[100%] rounded-[20px] mb-[30px]">
             </div>
         </div>
         </section>
 
-    <section class="w-screen flex flex-col items-center justify-center pt-[50px] lg:pt-[100px] pb:[60px] lg:pb-[90px] px-[30px]">
+    <section id="penyerahan" class="w-screen flex flex-col items-center justify-center pt-[50px] lg:pt-[100px] pb:[60px] lg:pb-[90px] px-[30px]">
         <h2 class="text-center lg:text-left text-[40px] font-bold mb-[10px] lg:mb-[40px]">Alur <span class="text-[#00b09b]">Penyerahan Santri</span></h2>
         <div class="w-screen px-12 mt-8 lg:flex flex-wrap item-center justify-center">
             <div class="w-[90%] lg:w-[31%] mb-[40px] lg:mb-0 justify-center relativ rounded-lg mx-3 h-[300px] lg:h-[260px] p-4 lg:p-6 flex flex-col items-center text-center">
@@ -279,7 +310,7 @@
     </section>
 
 
-    <section class="w-screen lg:flex h-max px-12 pt-[50px] lg:pt-[50px] pb-[50px] bg-slate-100">
+    <section id="pelayanan" class="w-screen lg:flex h-max px-12 pt-[50px] lg:pt-[50px] pb-[50px] bg-slate-100">
         <div class="w-[100%] lg:w-[50%] h-max lg:h-[400px] flex flex-col justify-center items-center">
             <img src="./assets/images/pondok.jpg" class="rounded-lg lg:mb-0 mb-[20px] w-[80%]" alt="img">
         </div>
@@ -334,7 +365,7 @@
         </div>
     </section>
 
-    <footer class="w-[100vw] overflow-hidden lg:w-screen flex flex-col items-center mt-12 justify-between h-max px-4 lg:px-12 pt-6 lg:pt-12 bg-[#555]">
+    <footer id="kontak" class="w-[100vw] overflow-hidden lg:w-screen flex flex-col items-center mt-12 justify-between h-max px-4 lg:px-12 pt-6 lg:pt-12 bg-[#555]">
         <div class="w-screen lg:flex items-center pt-[14px] pb-[30px] justify-between">
             <div class="w-[100%] lg:w-[50%] pl-[40px]">
                 <h2 class="mb-5 text-[20px] text-white">Pondok Pesantren Nurul Jadid</h2>
@@ -381,6 +412,21 @@
             const accordionItem = heading.parentNode;
             accordionItem.classList.toggle('active');
        }
+
+       // Get the sidebar and buttons
+       const sidebar = document.getElementById('sidebare');
+       const sidebarButton = document.querySelector('.btnSidebar');
+       const closeButton = document.getElementById('closeX');
+       
+       // Function to toggle the sidebar class
+       function toggleSidebar() {
+           sidebar.classList.toggle('sidebare');
+           sidebar.classList.toggle('sidebarHide');
+       }
+       
+       // Add click event listeners to the buttons
+       sidebarButton.addEventListener('click', toggleSidebar);
+       closeButton.addEventListener('click', toggleSidebar);
     </script>
 
 </body>

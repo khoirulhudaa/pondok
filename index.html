@@ -28,6 +28,52 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="overflow-x-hidden">
+    <div id="sidebare" class="sidebarHide">
+        <img src="./assets/images/x.svg" alt="icon" id="closeX" class="w-[24px] absolute top-8 right-8 cursor-pointer hover:brightness-[90%] active:scale-[0.97]">
+        <ul class="w-max text-black ml-6 mt-3 mr-3 lg:hidden lg:flex item-center">
+            <a href="#visi" class="text-black text-[20px] lg:text-[18px] mb-3 mx-4 hover:brightness-[90%] active:scale-[0.98]">
+                <li>Visi & Misi</li>
+            </a>
+            <a href="#profile" class="text-black text-[20px] lg:text-[18px] mb-3 mx-4 hover:brightness-[90%] active:scale-[0.98]">
+                <li>Profile</li>
+            </a>
+            <a href="#kontak" class="text-black text-[20px] lg:text-[18px] mb-3 mx-4 hover:brightness-[90%] active:scale-[0.98]">
+                <li>Kontak</li>
+            </a>
+        </ul>
+    </div>
+    <nav class="flex items-center justify-between px-8 lg:px-[50px] py-4 bg-gradient-to-r from-[#00b09b] shadow-lg z-20 to-[#96c93d] w-screen h-max">
+        <div class="lg:flex items-center text-white hidden">
+            <img src="./assets/images/logoPondok.png" alt="logo" class="w-[50px]">
+            <h2 class="hidden lg:inline text-white font-bold text-[22px] ml-4">Pondok al-qomariyah</h2>
+        </div>
+        <div class="flex items-center w-full lg:w-max justify-between lg:justify-center">
+            <div class="flex w-max">
+                <ul class="w-max text-white mt-3 mr-3 hidden lg:flex item-center">
+                    <a href="#visi" class="mx-4 hover:brightness-[90%] active:scale-[0.98]">
+                        <li>Visi & Misi</li>
+                </a>
+                <a href="#profile" class="mx-4 hover:brightness-[90%] active:scale-[0.98]">
+                    <li>Profile</li>
+                </a>
+                <a href="#kontak" class="mx-4 hover:brightness-[90%] active:scale-[0.98]">
+                    <li>Kontak</li>
+                </a>
+                </ul>
+                <a href="./register.html">
+                    <div class="w-max h-max px-6 py-3 rounded-full text-center cursor-pointer hover:brightness-[90%] bg-white text-green-500 mr-4 active:scale-[0.97]">Daftar</div>
+                </a>
+                <a href="./login.html">
+                    <div class="w-max h-max px-6 py-3 rounded-full text-center cursor-pointer hover:brightness-[90%] bg-[#f5ae10] text-white active:scale-[0.97]">Login</div>
+                </a>
+            </div>
+            <div class="btnSidebar flex flex-col ml-auto lg:ml-0 lg:mt-0 cursor-pointer hover:brightness-[90%] active:scale-[0.97] lg:hidden w-max h-max">
+                <div class="relative w-[30px] h-[4px] rounded-md bg-white mb-[5px]"></div>
+                <div class="relative w-[30px] h-[4px] rounded-md bg-white mb-[5px]"></div>
+                <div class="relative w-[30px] h-[4px] rounded-md bg-white mb-[5px]"></div>
+            </div>
+        </div>
+    </nav>
     <section class="overflow-hidden rounded-br-[140px] flex items-center justify-center bg-gradient-to-r from-[#00b09b] to-[#96c93d] w-screen h-max lg:h-[80vh] px-2 lg:px-12">
         <div class="lg:flex items-center justify-center pb-[50px] lg:pb-0">
             <div class="w-[100%] lg:w-[40%] flex lg:inline my-12 lg:my-0 items-center justify-center">
@@ -47,7 +93,7 @@
         </div>
     </section>
 
-    <section class="overflow-hidden w-[100vw] lg:w-screen flex flex-col items-center justify-center py-[60px] px-[30px]">
+    <section id="visi" class="overflow-hidden w-[100vw] lg:w-screen flex flex-col items-center justify-center py-[60px] px-[30px]">
         <h2 class="text-[40px] font-500">Visi & Misi</h2>
         <div class="w-screen lg:flex item-center justify-center">
             <div class="w-[90%] lg:w-[30%] mt-[40px] border-[1px] border-slate-400 rounded-lg mx-4 p-6 h-max">
@@ -71,7 +117,7 @@
         </div>
     </section>
 
-    <section class="overflow-hidden w-[100vw] lg:w-screen h-max p-2 lg:p-12">
+    <section id="profile" class="overflow-hidden w-[100vw] lg:w-screen h-max p-2 lg:p-12">
         <div class="w-full item-center lg:flex justify-center">
             <div class="w-[90%] lg:w-[50%] mx-5">
                 <img src="./assets/images/profile.jpg" alt="profle" class="w-[100%] rounded-[20px]">
@@ -92,7 +138,7 @@
         </div>
     </section>
 
-     <footer class="w-[100vw] overflow-hidden lg:w-screen flex flex-col items-center mt-12 justify-between h-max px-4 lg:px-12 pt-6 lg:pt-12 bg-[#555]">
+     <footer id="kontak" class="w-[100vw] overflow-hidden lg:w-screen flex flex-col items-center mt-12 justify-between h-max px-4 lg:px-12 pt-6 lg:pt-12 bg-[#555]">
         <div class="w-screen lg:flex items-center pt-[14px] pb-[30px] justify-between">
             <div class="w-[100%] lg:w-[50%] pl-[40px]">
                 <h2 class="mb-5 text-[20px] text-white">Pondok Pesantren Nurul Jadid</h2>
@@ -134,5 +180,22 @@
         </div>
     </footer>
 
+<script>
+    // Get the sidebar and buttons
+    const sidebar = document.getElementById('sidebare');
+    const sidebarButton = document.querySelector('.btnSidebar');
+    const closeButton = document.getElementById('closeX');
+
+    // Function to toggle the sidebar class
+    function toggleSidebar() {
+        sidebar.classList.toggle('sidebare');
+        sidebar.classList.toggle('sidebarHide');
+    }
+
+    // Add click event listeners to the buttons
+    sidebarButton.addEventListener('click', toggleSidebar);
+    closeButton.addEventListener('click', toggleSidebar);
+</script>
+    
 </body>
 </html>
